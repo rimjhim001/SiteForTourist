@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Food Ordering</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="text-align: center;">
+        <h2>Welcome to Our Food Ordering System</h2>
+        <p>Order your favorite food online!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Price:₹250</p>
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmlnJTIwYnVyZ2VyfGVufDB8fDB8fHww" width="150px" alt="">
+            <button onclick="addToCart('Burger',250)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Price: ₹850</p>
+    <img src="https://media.istockphoto.com/id/1349560847/photo/sausage-and-vegetable-pizza-on-dark-background.jpg?s=612x612&w=0&k=20&c=VjDdBc_WrHh9dqI8jCSEoI1jeWQDVSdXOJJ5LijQoRA=" width="150px" alt="">
+    <button onclick="addToCart('Pizza', 850)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Pasta</h3>
+            <p>Price: ₹550</p>
+            <img src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/08/Penne-pasta-with-a-spicy-sauce-basil-and-grated-parmesan-cheese.jpg" width="150px" alt="">
+    <button onclick="addToCart('Pasta', 550)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Salad</h3>
+            <p>Price: ₹180</p>
+            <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?cs=srgb&dl=pexels-chanwalrus-1059905.jpg&fm=jpg" width="150px" alt="">
+    <button onclick="addToCart('Salad',180)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Cart</h2>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <button id="checkout-button" onclick="checkout()" disabled>Checkout</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
